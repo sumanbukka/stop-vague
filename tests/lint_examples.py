@@ -46,8 +46,13 @@ def parse(md: str):
     for block in blocks:
         title = block.splitlines()[0].strip()
         fields = {}
-        for key in ("Type", "Before", "After", "Impact", "Next"):
-            m = re.search(rf"^{key}: (.+)$", block, flags=re.M)
+        for key, pat in (
+            ("Before", r"^\*\*Before:\*\* (.+)$"),
+            ("After", r"^\*\*After:\*\* (.+)$"),
+            ("Impact", r"^- \*\*Impact:\*\* (.+)$"),
+            ("Next", r"^- \*\*Next step:\*\* (.+)$"),
+        ):
+            m = re.search(pat, block, flags=re.M)
             fields[key] = m.group(1).strip() if m else None
         yield title, fields
 
@@ -63,7 +68,7 @@ def main() -> int:
     for title, f in parse(md):
         count += 1
         label = f"Example {title}"
-        for key in ("Type", "Before", "After", "Impact", "Next"):
+        for key in ("Before", "After", "Impact", "Next"):
             if not f[key]:
                 failures.append(f"{label}: missing {key}")
         if not f["After"]:

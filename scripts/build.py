@@ -45,7 +45,7 @@ def examples_block() -> str:
     out = []
     for n in INLINE_EXAMPLES:
         m = re.search(
-            rf"^## Example {n}: .*?\nType: .*?\nBefore: (.+?)\nAfter: (.+?)\n",
+            rf"^## Example {n}: .*?\n\n\*\*Before:\*\* (.+?)\n\n\*\*After:\*\* (.+?)\n",
             md,
             flags=re.M | re.S,
         )
