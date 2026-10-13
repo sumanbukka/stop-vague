@@ -4,6 +4,8 @@ Turn vague feedback into SBI or STAR feedback people can act on.
 
 stop-slop and similar tools fix how writing sounds. stop-vague fixes whether feedback is useful, because most bad feedback is written by humans and sounds natural.
 
+![A vague line is struck through, then the rewrite builds up in four parts: situation, behavior, impact and next step.](assets/demo.gif)
+
 **Before**
 
 > You need to be more strategic.
