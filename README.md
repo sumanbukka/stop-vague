@@ -42,11 +42,11 @@ One source of truth (`SKILL.md`), built into the formats each tool wants.
 | Any coding agent | Paste this into the agent: `Install the /stop-vague skill globally from https://github.com/sumanbukka/stop-vague` |
 | Skills CLI | See [Quick install](#quick-install) above. |
 | Claude.ai and Claude Desktop | Download [dist/stop-vague.zip](dist/stop-vague.zip), then go to Customize, Skills, click +, Create skill, Upload a skill. Needs code execution and file creation enabled. Menu names change, so look for Skills if this has moved. |
-| Claude Projects | Paste [dist/PROMPT.md](dist/PROMPT.md) into the project instructions. |
-| ChatGPT | Paste [dist/PROMPT.md](dist/PROMPT.md) into Custom Instructions, or into the instructions of a Custom GPT. |
-| Gemini | Paste [dist/PROMPT.md](dist/PROMPT.md) into a Gem's instructions. |
-| Cursor | Copy [dist/stop-vague.mdc](dist/stop-vague.mdc) to `.cursor/rules/stop-vague.mdc`. |
-| GitHub Copilot | Append the contents of [dist/PROMPT.md](dist/PROMPT.md) to `.github/copilot-instructions.md`. |
+| Claude Projects | Paste [dist/PROMPT.md](dist/PROMPT.md) into the project instructions. Not yet tested. |
+| ChatGPT | Paste [dist/PROMPT.md](dist/PROMPT.md) into Custom Instructions, or into the instructions of a Custom GPT. Not yet tested. |
+| Gemini | Paste [dist/PROMPT.md](dist/PROMPT.md) into a Gem's instructions. Not yet tested. |
+| Cursor | Copy [dist/stop-vague.mdc](dist/stop-vague.mdc) to `.cursor/rules/stop-vague.mdc`. Not yet tested. |
+| GitHub Copilot | Append the contents of [dist/PROMPT.md](dist/PROMPT.md) to `.github/copilot-instructions.md`. Not yet tested. |
 | Any API | Use [dist/PROMPT.md](dist/PROMPT.md) as the system prompt. |
 
 ## How to use it
