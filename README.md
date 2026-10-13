@@ -25,7 +25,7 @@ One source of truth (`SKILL.md`), built into the formats each tool wants.
 | Tool | How |
 | --- | --- |
 | Claude Code | `curl -fsSL https://raw.githubusercontent.com/sumanbukka/stop-vague/main/scripts/install.sh \| bash` (add `-s -- --project` to install into the current repo instead). Then ask: `use stop-vague on this: ...` |
-| Claude.ai and Claude Desktop | Download [dist/stop-vague.zip](dist/stop-vague.zip) and upload it as a skill under Settings, Capabilities (menu names change, look for Skills). |
+| Claude.ai and Claude Desktop | Download [dist/stop-vague.zip](dist/stop-vague.zip), then go to Customize, Skills, click +, Create skill, Upload a skill. Needs code execution and file creation enabled. Menu names change, so look for Skills if this has moved. |
 | Claude Projects | Paste [dist/PROMPT.md](dist/PROMPT.md) into the project instructions. |
 | ChatGPT | Paste [dist/PROMPT.md](dist/PROMPT.md) into Custom Instructions, or into the instructions of a Custom GPT. |
 | Gemini | Paste [dist/PROMPT.md](dist/PROMPT.md) into a Gem's instructions. |
