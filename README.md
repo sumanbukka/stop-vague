@@ -35,7 +35,18 @@ One source of truth (`SKILL.md`), built into the formats each tool wants.
 | GitHub Copilot | Append the contents of [dist/PROMPT.md](dist/PROMPT.md) to `.github/copilot-instructions.md`. |
 | Any API | Use [dist/PROMPT.md](dist/PROMPT.md) as the system prompt. |
 
-Then paste feedback and ask for a rewrite. Add "score it" if you want the numbers.
+## How to use it
+
+Paste your feedback after one of these lines.
+
+| You type | You get |
+| --- | --- |
+| `use stop-vague on this: <feedback>` | The default: scores, every vague phrase quoted, a rewrite, and a re-score. It asks for missing facts or leaves [placeholders]. |
+| `use stop-vague on this, rewrite only: <feedback>` | Just the rewrite and one line on what changed. |
+| `score this feedback, do not rewrite it: <feedback>` | The score table, the quoted violations and the facts a rewrite would need. |
+| `use STAR for this: <feedback>` | The rewrite in STAR. Say it once and it holds for the conversation. Also `four part`. |
+
+In Claude Code you can set the format once for a project with a line like `feedback format: STAR` in CLAUDE.md. SBI is the default.
 
 ## Formats
 
