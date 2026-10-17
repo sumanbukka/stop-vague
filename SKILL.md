@@ -1,6 +1,6 @@
 ---
 name: stop-vague
-description: Rewrites vague workplace feedback (performance reviews, 1:1 notes, peer feedback, promotion write-ups) into specific, behavioral, actionable feedback. Use when the user pastes feedback that sounds like "great job", "needs more ownership", "be more strategic", or asks to sharpen, fix, or score feedback before delivering it.
+description: Rewrites vague workplace feedback (performance reviews, 1:1 notes, peer feedback, promotion write-ups) into specific, behavioral, actionable feedback. Use when the user pastes feedback that sounds like "great job", "needs more ownership", "be more strategic", or asks to sharpen, fix, or score feedback before delivering it ("use stop-vague", "sharpen this feedback", "score this feedback").
 ---
 
 # Stop Vague
@@ -9,18 +9,24 @@ Most feedback fails because the writer knows what they mean and the reader does 
 
 ## Workflow
 
-1. Read the draft. Note who it is for (the person, their manager, a calibration committee) and whether it is praise, correction, or both.
+1. Check "When to step back" first. Then read the draft. Note who it is for (the person, their manager, a calibration committee) and whether it is praise, correction, or both.
 2. Score it on the five dimensions below, 1 to 10 each.
 3. List every violation of the rules, quoting the exact phrase.
 4. If key facts are missing (no example, no outcome), ask up to three short questions. If the user cannot answer, rewrite with clearly marked placeholders like [date] or [outcome] instead of inventing facts.
-5. Rewrite with all violations fixed. Keep the writer's voice and level of warmth.
+5. Rewrite with all violations fixed. Keep the writer's voice and level of warmth. Write in the language the feedback was written in, and keep names, dates, and quotes exactly as given.
 6. Re-score. If any dimension is below 7, rewrite again.
 
 Never invent events, quotes, numbers, or outcomes. A sharp but fabricated example is worse than a vague true one.
 
 ## Sensitive content
 
-If the input attaches a real name to sensitive content (a PIP, compensation, termination, a health or legal matter), remind the user once in the conversation that they may want to swap the name for a placeholder like [Name] before sharing the result further, then proceed with the rewrite as normal. Do not refuse, do not repeat the reminder, and do not change the rewrite because of it.
+If the input attaches a real name to sensitive content (a PIP, compensation, termination, a health or legal matter), remind the user once in the conversation that they may want to swap the name for a placeholder like [Name] before sharing the result further, then proceed with the rewrite as normal. Do not refuse, do not repeat the reminder, and do not change the rewrite because of it. The exception is a report of someone's conduct toward another person (see "When to step back"): never suggest placeholders there, because the report needs the real names.
+
+## When to step back
+
+Already specific: if the draft names a moment, a behavior, an impact, and a next step, and scores 35 or above, say so, name what works, and leave it unchanged. Offer at most one small edit. Do not rewrite good feedback to look busy.
+
+Reports of conduct toward a person, such as harassment, discrimination, or unsafe or unlawful treatment: say once that this kind of feedback may need HR or legal review, and sharpen only the facts as the writer states them. Do not score it, soften it, reframe it, or characterize the conduct, do not suggest replacing names with placeholders, and do not give legal advice. Leave the impact and the ask as placeholders for the writer to fill, since they are the writer's to state.
 
 ## The five dimensions
 
@@ -64,7 +70,15 @@ The format changes the shape of the rewrite only. The rules, the scoring, and th
 
 ## Output format
 
-Return in this order: the score table, the violations with exact quotes, the rewrite, the re-score. If the user only asks for the rewrite, give the rewrite and one line on what changed.
+Unless a "When to step back" case applies, return in this order: the score table, the violations with exact quotes, the rewrite, the re-score. If the user only asks for the rewrite, give the rewrite and one line on what changed.
+
+## Before you send
+
+1. Every number, date, name, and quote in the rewrite appears in the draft or in the user's answers. Anything else is a [placeholder].
+2. Any duration or count you state matches the dates or figures given. Recompute it. If the numbers disagree, ask the writer which is right instead of silently correcting. In rewrite-only mode, keep the writer's figure and flag the mismatch in the one-line note.
+3. Each placeholder is in square brackets and says what is missing.
+4. The next step is something the reader can do, with a date or a [date] placeholder when timing matters.
+5. No fact the writer stated was dropped, and the correction is no softer than the draft.
 
 ## References
 
