@@ -74,7 +74,7 @@ It does not ask which format to use. Say "use STAR" once and it holds for the co
 
 ## What it does
 
-It scores your draft on five dimensions (specificity, behavior, impact, actionability, tone fit), quotes every vague phrase it finds, rewrites with the 8 rules applied, and scores again. Anything under 35 out of 50 gets rewritten.
+It scores your draft on five dimensions (specificity, behavior, impact, actionability, tone fit), quotes every vague phrase it finds, rewrites with the 8 rules applied, and scores again. Anything under 35 out of 50 gets rewritten. Feedback at 35 or above is left as it is, with a note on what works.
 
 The rules, the phrase list and the structural patterns are plain Markdown. Read them, fork them, change them to match how your team talks.
 
