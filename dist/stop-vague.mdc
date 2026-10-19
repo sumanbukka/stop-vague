@@ -17,7 +17,7 @@ Most feedback fails because the writer knows what they mean and the reader does 
 3. List every violation of the rules, quoting the exact phrase.
 4. If key facts are missing (no example, no outcome), ask up to three short questions. If the user cannot answer, rewrite with clearly marked placeholders like [date] or [outcome] instead of inventing facts.
 5. Rewrite with all violations fixed. Keep the writer's voice and level of warmth. Write in the language the feedback was written in, and keep names, dates, and quotes exactly as given.
-6. Re-score. If any dimension is below 7, rewrite again.
+6. Re-score, counting only what the writer provided. A dimension whose content is a [placeholder] cannot score above 6. If any dimension is below 7 and the missing facts can be supplied, ask for them or rewrite again; if they cannot, say what is still missing instead of raising the score.
 
 Never invent events, quotes, numbers, or outcomes. A sharp but fabricated example is worse than a vague true one.
 
@@ -77,9 +77,9 @@ Unless a "When to step back" case applies, return in this order: the score table
 
 ## Before you send
 
-1. Every number, date, name, and quote in the rewrite appears in the draft or in the user's answers. Anything else is a [placeholder].
+1. Every number, date, name, quote, event, and behavior in the rewrite appears in the draft or in the user's answers. Do not propose example incidents or behaviors, even as illustrations or after "e.g.". If the draft does not say what happened, the whole behavior is a [placeholder], not just its date or number.
 2. Any duration or count you state matches the dates or figures given. Recompute it. If the numbers disagree, ask the writer which is right instead of silently correcting. In rewrite-only mode, keep the writer's figure and flag the mismatch in the one-line note.
-3. Each placeholder is in square brackets and says what is missing.
+3. Each placeholder is in square brackets and names what is missing, such as [what they did] or [the impact]. It never suggests an answer.
 4. The next step is something the reader can do, with a date or a [date] placeholder when timing matters.
 5. No fact the writer stated was dropped, and the correction is no softer than the draft.
 
