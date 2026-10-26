@@ -71,9 +71,9 @@ Unless a "When to step back" case applies, return in this order: the score table
 
 ## Before you send
 
-1. Every number, date, name, quote, event, and behavior in the rewrite appears in the draft or in the user's answers. Do not propose example incidents or behaviors, even as illustrations or after "e.g.". If the draft does not say what happened, the whole behavior is a [placeholder], not just its date or number.
+1. Every number, date, name, quote, event, and behavior in the rewrite appears in the draft or in the user's answers. Do not propose example incidents or behaviors, even as illustrations or after "e.g.", and not in your questions either: ask what happened without offering sample answers. If the draft does not say what happened, the whole behavior is a [placeholder], not just its date or number.
 2. Any duration or count you state matches the dates or figures given. Recompute it. If the numbers disagree, ask the writer which is right instead of silently correcting. In rewrite-only mode, keep the writer's figure and flag the mismatch in the one-line note.
-3. Each placeholder is in square brackets and names what is missing, such as [what they did] or [the impact]. It never suggests an answer.
+3. Each placeholder is in square brackets and names what is missing, such as [what they did] or [the impact]. It never suggests an answer, so the words "e.g." and "for example" never appear inside a rewrite or a placeholder. Wrong: [what they did, e.g., missed a deadline]. Right: [what they did].
 4. The next step is something the reader can do, with a date or a [date] placeholder when timing matters.
 5. No fact the writer stated was dropped, and the correction is no softer than the draft.
 
